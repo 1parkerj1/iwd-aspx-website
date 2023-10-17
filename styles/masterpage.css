@@ -1,0 +1,126 @@
+﻿body {
+    font-family: monospace;
+    color: white;
+    background-color: #124351;
+    margin: 0 auto;
+    width: 1200px;
+    text-align: center;
+}
+
+.wrapper {
+    font-family: monospace;
+    color: white;
+    margin: 0px auto 0px auto;
+    background: #124351;
+    width: 1200px;
+    position: relative;
+    align-content: center;
+}
+
+.footer, .header {
+    font-family: monospace;
+    color: white;
+    width: 1200px;
+    height: 75px;
+    background-color: #124351
+}
+
+.navbox {
+    width: 100%;
+    height: inherit;
+    background-color: inherit;
+    align-content: center;
+}
+
+.btn {
+
+    font-family: monospace;
+    font-size: 25px;
+    color: white;
+    border: none;
+    background-color: inherit;
+    padding-top: 25px; 
+    cursor: pointer;
+    display: inline-block;
+}
+
+    .btn:hover{
+        color: #8BD27A;
+        font-weight: bold;
+    }
+
+
+.logincart1 {
+    font-family: monospace;
+    font-size: 20px;
+    color: white;
+    border: none;
+    background-color: inherit;
+    padding-top: 0px;
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    text-decoration: none;
+}
+
+    .logincart1:hover {
+        color: crimson;
+        font-weight: bold;
+    }
+    .logincart1:visited{
+        text-decoration: none;
+    }
+
+.sb {
+    float: right;
+    margin-top: 14px;
+}
+.sb1 {
+    display: inline-block;
+    float: left;
+    margin: 10px 0 20px 10px;
+    height: auto;
+    text-align: right;
+
+}
+
+.logincart2 {
+    font-family: monospace;
+    font-size: 15px;
+    color: white;
+    border: none;
+    background-color: inherit;
+    padding-top: 0px;
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    text-decoration: none;
+    margin: 0 0 0 0;
+}
+
+    .logincart2:hover {
+        color: crimson;
+        font-weight: bold;
+
+    }
+
+    .logincart2:visited {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+    }
+
+.sb2 {
+    display: inline-block;
+    float: right;
+    margin: 10px 0 20px 10px;
+    font-size: 12px
+}
+
+#btnLogout {
+    background: none;
+    border: none;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}

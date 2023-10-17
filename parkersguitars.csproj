@@ -1,0 +1,375 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{505F8EC5-7D3D-4D7B-A424-466D251B56EA}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>parkersguitars</RootNamespace>
+    <AssemblyName>parkersguitars</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44311</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="1AccessoriesPages\images\bigmuff1.jpg" />
+    <Content Include="1AccessoriesPages\images\bigmuff2.jpg" />
+    <Content Include="1AccessoriesPages\images\boss1.jpg" />
+    <Content Include="1AccessoriesPages\images\boss2.jpg" />
+    <Content Include="1AccessoriesPages\images\chorus1.jpg" />
+    <Content Include="1AccessoriesPages\images\chorus2.jpg" />
+    <Content Include="1AccessoriesPages\images\dinojrcable1.jpg" />
+    <Content Include="1AccessoriesPages\images\dinojrcable2.jpg" />
+    <Content Include="1AccessoriesPages\images\fuzzfactory1.jpg" />
+    <Content Include="1AccessoriesPages\images\fuzzfactory2.jpg" />
+    <Content Include="1AccessoriesPages\images\jmpicks1.jpg" />
+    <Content Include="1AccessoriesPages\images\jmpicks2.jpg" />
+    <Content Include="1AccessoriesPages\images\jmpickup1.jpg" />
+    <Content Include="1AccessoriesPages\images\jmpickup2.jpg" />
+    <Content Include="1AccessoriesPages\images\kirkpick1.jpg" />
+    <Content Include="1AccessoriesPages\images\kirkpick2.jpg" />
+    <Content Include="1AccessoriesPages\images\tuner1.jpg" />
+    <Content Include="1AccessoriesPages\images\tuner2.jpg" />
+    <Content Include="3ShowroomPages\images\felder.jpg" />
+    <Content Include="3ShowroomPages\images\fendermaster1.jpg" />
+    <Content Include="3ShowroomPages\images\fendermaster2.jpg" />
+    <Content Include="3ShowroomPages\images\fendermaster3.jpg" />
+    <Content Include="3ShowroomPages\images\fendermaster4.jpg" />
+    <Content Include="3ShowroomPages\images\fenderproud1.jpg" />
+    <Content Include="3ShowroomPages\images\fenderproud2.jpg" />
+    <Content Include="3ShowroomPages\images\fenderproud3.jpg" />
+    <Content Include="3ShowroomPages\images\fenderproud4.jpg" />
+    <Content Include="3ShowroomPages\images\fendertele1.jpg" />
+    <Content Include="3ShowroomPages\images\fendertele2.jpg" />
+    <Content Include="3ShowroomPages\images\fendertele3.jpg" />
+    <Content Include="3ShowroomPages\images\fendertele4.jpg" />
+    <Content Include="3ShowroomPages\images\giannini1.jpg" />
+    <Content Include="3ShowroomPages\images\giannini2.jpg" />
+    <Content Include="3ShowroomPages\images\giannini3.jpg" />
+    <Content Include="3ShowroomPages\images\giannini4.jpg" />
+    <Content Include="3ShowroomPages\images\gibsondouble1.jpg" />
+    <Content Include="3ShowroomPages\images\gibsondouble2.jpg" />
+    <Content Include="3ShowroomPages\images\gibsondouble3.jpg" />
+    <Content Include="3ShowroomPages\images\gibsondouble4.jpg" />
+    <Content Include="3ShowroomPages\images\gibsonreverse1.jpg" />
+    <Content Include="3ShowroomPages\images\gibsonreverse2.jpg" />
+    <Content Include="3ShowroomPages\images\gibsonreverse3.jpg" />
+    <Content Include="3ShowroomPages\images\gibsonreverse4.jpg" />
+    <Content Include="3ShowroomPages\images\ibanezpuzzle1.jpg" />
+    <Content Include="3ShowroomPages\images\ibanezpuzzle2.jpg" />
+    <Content Include="3ShowroomPages\images\ibanezpuzzle3.jpg" />
+    <Content Include="3ShowroomPages\images\ibanezpuzzle4.jpg" />
+    <Content Include="3ShowroomPages\images\kenp.jpg" />
+    <Content Include="3ShowroomPages\images\kubicki1.jpg" />
+    <Content Include="3ShowroomPages\images\kubicki2.jpg" />
+    <Content Include="3ShowroomPages\images\kubicki3.jpg" />
+    <Content Include="3ShowroomPages\images\kubicki4.jpg" />
+    <Content Include="3ShowroomPages\images\KubickiFactor.jpg" />
+    <Content Include="3ShowroomPages\images\led1.jpg" />
+    <Content Include="3ShowroomPages\images\liquidmetal1.jpg" />
+    <Content Include="3ShowroomPages\images\liquidmetal2.jpg" />
+    <Content Include="3ShowroomPages\images\liquidmetal3.jpg" />
+    <Content Include="3ShowroomPages\images\liquidmetal4.jpg" />
+    <Content Include="3ShowroomPages\images\masterblaster1.jpg" />
+    <Content Include="3ShowroomPages\images\parkerusa1.jpg" />
+    <Content Include="3ShowroomPages\images\parkerusa2.jpg" />
+    <Content Include="3ShowroomPages\images\parkerusa3.jpg" />
+    <Content Include="3ShowroomPages\images\parkerusa4.jpg" />
+    <Content Include="3ShowroomPages\images\proud1.jpg" />
+    <Content Include="3ShowroomPages\images\russianfender1.jpg" />
+    <Content Include="3ShowroomPages\images\russianfender2.jpg" />
+    <Content Include="3ShowroomPages\images\russianfender3.jpg" />
+    <Content Include="3ShowroomPages\images\russianfender4.jpg" />
+    <Content Include="3ShowroomPages\images\sambora.jpg" />
+    <Content Include="3ShowroomPages\images\starstrat1.jpg" />
+    <Content Include="3ShowroomPages\images\starstrat4.jpg" />
+    <Content Include="3ShowroomPages\images\stratstar2.jpg" />
+    <Content Include="3ShowroomPages\images\stratstar3.jpg" />
+    <Content Include="3ShowroomPages\images\yuri.jpg" />
+    <Content Include="3ShowroomPages\item1.aspx" />
+    <Content Include="3ShowroomPages\item10.aspx" />
+    <Content Include="3ShowroomPages\item11.aspx" />
+    <Content Include="3ShowroomPages\item12.aspx" />
+    <Content Include="3ShowroomPages\item2.aspx" />
+    <Content Include="3ShowroomPages\item3.aspx" />
+    <Content Include="3ShowroomPages\item4.aspx" />
+    <Content Include="3ShowroomPages\item5.aspx" />
+    <Content Include="3ShowroomPages\item6.aspx" />
+    <Content Include="3ShowroomPages\item7.aspx" />
+    <Content Include="3ShowroomPages\item8.aspx" />
+    <Content Include="3ShowroomPages\item9.aspx" />
+    <Content Include="images\homepagenewinn\dinosaurjrcable.jpg" />
+    <Content Include="images\homepagenewinn\dinosaurjrpicks.png" />
+    <Content Include="images\GOTD\1parker2007.jpg" />
+    <Content Include="images\GOTD\2parker2007.jpg" />
+    <Content Include="images\GOTD\3parker2007.jpg" />
+    <Content Include="images\GOTD\parker2007.jpg" />
+    <Content Include="images\HOMEBUTTON.png" />
+    <Content Include="images\homepage favourites\fender08.jpg" />
+    <Content Include="images\homepage favourites\gibson06.jpg" />
+    <Content Include="images\homepage favourites\gibsonreversev07.jpg" />
+    <Content Include="images\homepage favourites\parker07.jpg" />
+    <Content Include="images\homepagenewinn\ibanezpuzzle.jpg" />
+    <Content Include="images\homepagenewinn\zvexfuzzfactory.jpg" />
+    <Content Include="images\logoicon.ico" />
+    <Content Include="images\nice.jpg" />
+    <Content Include="main pages\About.aspx" />
+    <Content Include="main pages\Accessories.aspx" />
+    <Content Include="Secure\Cart.aspx" />
+    <Content Include="main pages\Homepage.aspx" />
+    <Content Include="main pages\Login.aspx" />
+    <Content Include="main pages\Showroom.aspx" />
+    <Content Include="script\ItemPage.js" />
+    <Content Include="styles\About.css" />
+    <Content Include="styles\Accessories.css" />
+    <Content Include="styles\Cart.css" />
+    <Content Include="styles\Homepage.css" />
+    <Content Include="styles\ItemPage.css" />
+    <Content Include="styles\Login.css" />
+    <Content Include="styles\masterpage.css" />
+    <Content Include="styles\Showroom.css" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="3ShowroomPages\item1.aspx.cs">
+      <DependentUpon>item1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="3ShowroomPages\item1.aspx.designer.cs">
+      <DependentUpon>item1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="3ShowroomPages\item10.aspx.cs">
+      <DependentUpon>item10.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="3ShowroomPages\item10.aspx.designer.cs">
+      <DependentUpon>item10.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="3ShowroomPages\item11.aspx.cs">
+      <DependentUpon>item11.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="3ShowroomPages\item11.aspx.designer.cs">
+      <DependentUpon>item11.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="3ShowroomPages\item12.aspx.cs">
+      <DependentUpon>item12.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="3ShowroomPages\item12.aspx.designer.cs">
+      <DependentUpon>item12.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="3ShowroomPages\item2.aspx.cs">
+      <DependentUpon>item2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="3ShowroomPages\item2.aspx.designer.cs">
+      <DependentUpon>item2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="3ShowroomPages\item3.aspx.cs">
+      <DependentUpon>item3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="3ShowroomPages\item3.aspx.designer.cs">
+      <DependentUpon>item3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="3ShowroomPages\item4.aspx.cs">
+      <DependentUpon>item4.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="3ShowroomPages\item4.aspx.designer.cs">
+      <DependentUpon>item4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="3ShowroomPages\item5.aspx.cs">
+      <DependentUpon>item5.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="3ShowroomPages\item5.aspx.designer.cs">
+      <DependentUpon>item5.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="3ShowroomPages\item6.aspx.cs">
+      <DependentUpon>item6.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="3ShowroomPages\item6.aspx.designer.cs">
+      <DependentUpon>item6.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="3ShowroomPages\item7.aspx.cs">
+      <DependentUpon>item7.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="3ShowroomPages\item7.aspx.designer.cs">
+      <DependentUpon>item7.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="3ShowroomPages\item8.aspx.cs">
+      <DependentUpon>item8.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="3ShowroomPages\item8.aspx.designer.cs">
+      <DependentUpon>item8.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="3ShowroomPages\item9.aspx.cs">
+      <DependentUpon>item9.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="3ShowroomPages\item9.aspx.designer.cs">
+      <DependentUpon>item9.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Code\CartItem.cs" />
+    <Compile Include="main pages\About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="main pages\About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="main pages\Accessories.aspx.cs">
+      <DependentUpon>Accessories.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="main pages\Accessories.aspx.designer.cs">
+      <DependentUpon>Accessories.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\Cart.aspx.cs">
+      <DependentUpon>Cart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\Cart.aspx.designer.cs">
+      <DependentUpon>Cart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="main pages\Homepage.aspx.cs">
+      <DependentUpon>Homepage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="main pages\Homepage.aspx.designer.cs">
+      <DependentUpon>Homepage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="main pages\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="main pages\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="main pages\Showroom.aspx.cs">
+      <DependentUpon>Showroom.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="main pages\Showroom.aspx.designer.cs">
+      <DependentUpon>Showroom.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PARKERSGUITARS.Master.cs">
+      <DependentUpon>PARKERSGUITARS.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PARKERSGUITARS.Master.designer.cs">
+      <DependentUpon>PARKERSGUITARS.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <Content Include="PARKERSGUITARS.Master" />
+    <Content Include="Secure\user.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>55889</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44311/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

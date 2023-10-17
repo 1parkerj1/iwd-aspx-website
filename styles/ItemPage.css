@@ -1,0 +1,161 @@
+﻿body {
+    font-family: monospace;
+    color: white;
+    background-color: #124351;
+    margin: 0 auto;
+    width: 1200px;
+    height: auto;
+    text-align: center;
+}
+
+h2 {
+    width: fit-content;
+    font-size: 25px;
+    margin-top: 20px !important;
+    background-color: #124351;
+    align-content: center;
+    margin: auto auto 20px auto;
+}
+
+.wrapper {
+    height: 2000px;
+    background-color: #14191F;
+    align-content: center;
+}
+
+img {
+    vertical-align: middle;
+    width:100%;
+    border-radius: 15px;
+}
+
+.slideshow-container {
+    width: 80%;
+    position: relative;
+    margin: auto;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    transform: translateX(-50%);
+}
+.prev {
+    left: -30px;
+    border-radius: 3px 0 0 3px;
+}
+
+.next {
+    right: -70px;
+    border-radius: 3px 0 0 3px;
+}
+    .prev:hover, .next:hover {
+        box-shadow: 0 0 7px white; /* increase the shadow on hover */
+    }
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 0.3s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .7
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .7
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+
+h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.iteminfo {
+    width: 100%;
+    margin: 25px auto;
+    height: fit-content;
+}
+
+.bullets {
+    float: left;
+    margin-top: 50px;
+    width: 25%;
+    height: 50%;
+}
+.right {
+    margin-top: 50px!important;
+    width: 65%;
+    height: fit-content;
+    margin: auto;
+    float: right;
+    padding-right: 10%;
+}
+.head {
+    font-size: 12px;
+    margin: 0 0 0 0;
+}
+.child {
+    font-size: 21px;
+    font-weight: bold;
+    margin: 1px 0 10px 0;
+    text-align: left;
+}
+
+ul {
+    list-style-type: none;
+    text-align: left;
+}
+
+
+.btnCart {
+    position: relative;
+    font-family: monospace;
+    
+}
+
+    .btnSr:hover {
+        cursor: pointer;
+    }
+p{
+    text-align: left;
+}
+
+.p-price {
+    text-align: center!important;
+    font-size: 15px;
+}
+
+.price {
+    align-content: center;
+    position: absolute;
+    height: fit-content;
+    width: 100%;
+    bottom: 10px;
+    margin: auto;
+}

@@ -1,0 +1,72 @@
+﻿body {
+    font-family: monospace;
+    color: white;
+    background-color: #124351;
+    margin: 0 auto;
+    width: 1200px;
+    height: auto;
+    text-align: center;
+}
+
+.wrapper {
+    align-content: center;
+    margin:auto;
+    height: 650px;
+    background-color: #14191F;
+}
+
+h1 {
+    width: 370px;
+    margin: auto;
+}
+
+.icon {
+    width: 100%;
+    padding: 25px 0 25px 0;
+    align-content: center;
+}
+#nice {
+    width: 150px;
+    height: 150px;
+}
+
+.loginwrapper {
+    height: 200px;
+    align-content: center;
+    padding: 20px;
+    width: 350px;
+    align-content: center;
+    margin: auto;
+    background-color: #007376;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+    .loginwrapper:hover {
+        box-shadow: 0 0 7px white;
+    }
+
+.userpass {
+    width: 300px;
+    height: 30px;
+    border-radius: 5px;
+}
+    .userpass:focus{
+        border-width: 3px;
+        border-color: #124351
+    }
+.loginlbl {
+    float: left;
+    margin: 10px 0 5px 23px;
+    font-size: medium;
+    background-color: #124351;
+}
+.loginbtn {
+    width: 200px;
+    height: 30px;
+    color: white;
+    font-size: medium;
+    font-family: monospace;
+    margin-top: 20px;
+    background-color: #124351;
+    border-radius: 5px;
+}

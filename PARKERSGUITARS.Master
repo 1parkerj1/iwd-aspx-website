@@ -1,0 +1,76 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="PARKERSGUITARS.master.cs" Inherits="parkersguitars.PARKERSGUITARS" %>
+
+<!DOCTYPE html>
+
+<html>
+    
+    <head runat="server">
+        
+        <title>ParkersGuitars</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="keywords" content="guitar, guitar showroom, guitar accessories, guitar sales" />
+        <link href="styles/masterpage.css" rel="stylesheet" type="text/css" />
+        <link href="images/logoicon.ico" rel="icon" type="image/x-icon" />
+        
+        <script type="text/javascript" language="javascript">
+           function areyousure() {
+                var reply = confirm("Empty basket contents... Are you sure?");
+                return reply;
+            }
+            function purchase() {
+                var reply = alert("Purchased Items!")
+                return reply;
+            }
+        </script>
+
+
+        <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
+   
+    </head>
+
+    <body>
+        <form id="form1" runat="server">
+            <div class="wrapper">
+
+                <div class ="header">
+                     <div class="navbox">
+
+                            <asp:ImageButton ID="imgbHome" Class="homebtn" runat="server" PostBackUrl="~/main pages/Homepage.aspx" ImageUrl="~/images/HOMEBUTTON.png"  Width="75px" Height="75px" style="float: left; padding-left: 10px;"/>
+                            <asp:Button ID="btnHome" class="btn" runat="server" Text="HOMEPAGE" CssClass="btn" PostBackUrl="~/main pages/Homepage.aspx" />
+                            <asp:Button ID="btnShowroom" class="btn" runat="server" Text="SHOWROOM" CssClass="btn" PostBackUrl="~/main pages/Showroom.aspx" />
+                            <asp:Button ID="btnAccssories" class="btn" runat="server" Text="ACCESSORIES" CssClass="btn" PostBackUrl="~/main pages/Accessories.aspx" />
+                            <asp:Button ID="btnFavourites" class="btn" runat="server" Text="ABOUT" CssClass="btn" PostBackUrl="~/main pages/About.aspx" />
+                            <div class="sb">
+                            <asp:LoginStatus ID="LoginStatus1" class="logincart1" runat="server" LoginText="LOGIN" LogoutText="LOGOUT" />
+                            <br />
+                            <asp:LinkButton ID="lbnCart" class="logincart1" runat="server" PostBackUrl="~/Secure/Cart.aspx">CART</asp:LinkButton>
+                            </div>
+
+                    </div>
+                </div>
+
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+                
+                <div class ="footer">
+                    <div class="sb1">
+                        <asp:HyperLink ID="HyperLink1" class="logincart2" runat="server" NavigateUrl="~/main pages/Login.aspx">LOGIN</asp:HyperLink>
+                        <br />
+                        <asp:HyperLink ID="lbnCart1" class="logincart2" runat="server" NavigateUrl="~/secure/Cart.aspx" >CART</asp:HyperLink> 
+                        <br />
+                        <asp:Button ID="btnAbout" Class="logincart2" runat="server" text="ABOUT" PostBackUrl="~/main pages/About.aspx"></asp:Button>                    
+                    </div>
+                    
+                    <div class="sb2">
+                        <p>Phone Number: 07784399734 <br /> Email: ContactUs@ParkersGuitars.com</p>
+                    </div>
+
+                    <p style="text-align: center; clear:both; padding-bottom:10px;">Parker's Guitars 2023</p>
+   
+                </div>
+
+            </div>
+        </form>
+    </body>
+
+</html>
